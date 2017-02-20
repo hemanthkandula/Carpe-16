@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myapplication.siva.Carpedium">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Carpe&apos;16"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SimpleScannerActivity" />
+        <activity android:name=".NewListActivity" />
+        <activity android:name=".studentsaddActivity" />
+        <activity
+            android:name=".AddUser"
+            android:label="@string/adduseractivitylabel"
+            android:noHistory="true" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Winners" />
+        <activity android:name=".ClusterEvents" />
+        <activity
+            android:name=".SpotRegistraion"
+            android:label="@string/title_activity_spot__registraion" />
+        <activity android:name=".GroupStudentsadd" />
+        <activity android:name=".GroupMembers" />
+        <activity android:name=".GroupMembersresults" />
+        <activity android:name=".Winpos"></activity>
+    </application>
+
+</manifest>
